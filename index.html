@@ -1,0 +1,242 @@
+
+<!DOCTYPE HTML>
+<html lang="PT">
+<head>
+    <title>Madalena e Hugo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> <!-- Load jQuery first -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-placeholder/2.3.1/jquery.placeholder.min.js"></script> <!-- Load Placeholder plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body class="landing">
+
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+        <!-- Banner -->
+        <section id="banner">
+            <div class="inner">
+                <p id="demo"></p>
+            </div>
+            <div class="more scrolly"></div>
+        </section>
+    </div>
+
+    <!-- One -->
+    <div class="container-fluid" id="one">
+        <div class="row align-items-center justify-content-center text-center">
+            <h2> O NOSSO CASAMENTO </h2>
+            <p class="convite"> Querida família e amigos,<br>
+                É com grande alegria que vos convidamos para o nosso casamento. <br>
+                Estamos muito felizes por celebrar o nosso amor e podermos partilhar este dia tão importante convosco!</p>
+
+            <h4 style="padding: 1.5vh;"> 2 de Agosto de 2025 | 14h</h4>
+        </div>
+        <div class="row align-items-center justify-content-center text-center" style="padding-top: 3vh;">
+            <div class="col-6 custom-col-left" style="padding-left: 3vh;">
+                <h4>Cerimónia</h4>
+                <p>Igreja da Nossa Senhora dos Prazeres <br>
+                    Aldeia Galega da Merceana</p>
+                <img src="images/capela.jpg" alt="Igreja da Nossa Senhora dos Prazeres na Aldeia Galega da Merceana" class="img-fluid" id="capela"/>
+                <p> </p>
+                <a href="https://maps.app.goo.gl/ARGDLou7pqTU7n8i9" type="button" class="btn btn-sm btn-outline-secondary" tabindex="-1" role="button" aria-disabled="true">Como Chegar</a>
+            </div>
+            <div class="col-6 custom-col-right" style="padding-right: 3vh;">
+                <h4>Festa</h4>
+                <p> <br> Quinta da Taipa</p>
+                <img src="images/taipa.jpg" alt="quinta da taipa" class="img-fluid" id="palacio"/>
+                <p> </p>
+                <a href="https://maps.app.goo.gl/VPN6Ep6hFgQceom27" type="button" class="btn btn-sm btn-outline-secondary" tabindex="-1" role="button" aria-disabled="true">Como Chegar</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Three -->
+    <div class="container-fluid" id="three">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-12 text-center">
+                <h2 style="padding-bottom: 1vh;"> LISTA DE PRESENTES </h2>
+                <p>É clichê, mas o melhor presente que nos podem dar é estarem presentes neste dia tão especial para nós! <br>
+                    Ainda assim, ficamos muito agradecidos se quiserem ajudar-nos na compra da nossa futura casa ou contribuir para a nossa lua de mel!
+                </p>
+            </div>
+        </div>
+
+        <div class="row align-items-center justify-content-center" style="padding-top: 5vh;">
+            <div class="col-12 text-left text-md-center">
+                <h2 class="with-line" style="position: relative; padding-bottom: 1vh;"> CASA </h2>
+                <p> Para a Lua de Mel, decidimos embarcar numa nova grande aventura! <br>
+                    Começamos em Bali – um destino que a Madalena sempre quis conhecer e que o Hugo, como futuro maridão exemplar, lá cedeu. <br>
+                    Depois seguimos para Okinawa e Ishigaki, porque ambos nos apaixonámos pelo Japão e o Hugo fazia questão de voltar, desta vez em modo Lua de Mel. <br>
+                    Terminamos em Tóquio, porque acreditamos que voltar onde fomos felizes é uma das melhores práticas numa relação – e, connosco, tem sempre resultado!</p>
+            </div>
+        </div>
+
+        <div class="row" style="padding-top: 3vh;">
+            <div id="carouselExampleControls" class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="images/basecopos.jpeg" class="d-block w-100" alt="Bases de Copos">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title"> <br> Voos </h6>
+                                <button id="clickable" class="btn clickable btn-outline-secondary">OFERECER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="images/candeeiro.jpg" class="d-block w-100" alt="Candeeiro">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Cascatas <br> Ubud</h6>
+                                <button id="clickable" class="btn clickable btn-outline-secondary">OFERECER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="images/candeeiro.jpg" class="d-block w-100" alt="Candeeiro">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Snorkeling <br> Gili Islands</h6>
+                                <button id="clickable" class="btn clickable btn-outline-secondary">OFERECER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="images/candeeiro.jpg" class="d-block w-100" alt="Candeeiro">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Mergulho com Mantas <br> Ishigaki</h6>
+                                <button id="clickable" class="btn clickable btn-outline-secondary">OFERECER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="images/faqueiro.jpg" class="d-block w-100" alt="Faqueiro">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Tour Cultural <br> Okinawa</h6>
+                                <button id="clickable" class="btn clickable btn-outline-secondary">OFERECER</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="images/faqueiro.jpg" class="d-block w-100" alt="Faqueiro">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">Jantar de Sushi <br> Tokyo</h6>
+                                <button id="clickable" class="btn clickable btn-outline-secondary">OFERECER</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="one">
+        <div class="row align-items-center justify-content-left text-center">
+            <h2>DRIVERS</h2>
+            <p> Para poderem beber à vontade, vamos ter um serviço de drivers, com as seguintes opções:<br>
+                - Levam o vosso carro para o casamento e o driver leva-vos para casa no vosso carro <br>
+                - Vão de boleia para o casamento e o driver leva-vos a casa no carro da empresa de drivers <br>
+                - Vão para o casamento e regressam do casamento com o driver, no carro da empresa de drivers <br>
+                Caso queiram este serviço: </p>
+        </div>
+        <div class="row align-items-center justify-content-center text-center" style="padding-top: 3vh;">
+            <h2>ALOJAMENTO</h2>
+            <div class="col-4 custom-col-left" style="padding-top: 3vh;">
+                <h4>Alojamento das Fontes<h4>
+                <a href="https://www.booking.com/Share-qMK0D5" type="button" class="btn btn-sm btn-outline-secondary" tabindex="-1" role="button" aria-disabled="true">Booking</a>
+            </div>
+   
+            <div class="col-4 custom-col-left">
+                <h4>Largo da Rainha, Guesthouse<h4>
+                <a href="https://www.booking.com/Share-WFvL4t" type="button" class="btn btn-sm btn-outline-secondary" tabindex="-1" role="button" aria-disabled="true">Booking</a>
+            </div>
+
+            <div class="col-4 custom-col-left"style="padding-bottom: 3vh;">
+                <h4>Casinha da Encosta</h4>
+                <a href="https://www.booking.com/Share-psZ2pY" type="button" class="btn btn-sm btn-outline-secondary" tabindex="-1" role="button" aria-disabled="true">Booking</a>
+            </div>
+            <p style="padding-top: 3vh;">
+                O preço de estadia de 1 noite é muito semelhante ao preço do serviço de drivers, portanto escolham o que vos faz mais sentido!<br>
+                Se quiserem voltar para casa e levar o carro, certifiquem-se que estão em condições para tal!
+            </p>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="three">
+        <div class="row align-items-center justify-content-center text-center">
+            <h2> Confirmar presença <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvhti2D1jRkMr_P6349hNTVz8D8ZhQ2O9Pyl9PvYxAW7xqoQ/viewform?embedded=true"> aqui</a> até dia X </h2>
+        </div>
+    </div>
+
+    <footer class="align-items-center justify-content-center text-center" id="footer" style="padding-top: 2.5vh;">
+        <h3>Madalena & Hugo</h3>
+        <h3>919800280 | 912891321 </h3>
+
+        <p class="fs-6" style="padding-top: 2.5vh;"> &copy; Pipa Rocha </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        window.addEventListener("load", function() {
+            const form = document.getElementById('presentForm');
+            if (form) {
+                form.addEventListener("submit", function(e) {
+                    e.preventDefault();
+                    const data = new FormData(form);
+                    const action = e.target.action;
+                    fetch(action, {
+                        method: 'POST',
+                        body: data,
+                    })
+                    .then(() => {
+                        alert("Obrigada! 😊");
+                    });
+                });
+            }
+        });
+    </script>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.serialize-object.js"></script>
+    <script src="assets/js/scriptinho.js"></script>
+            
+
+</body>
+</html>
