@@ -48,7 +48,7 @@ body {
 }
 
 #aqui{
-    color: white !important;
+    color: #ae5463 !important;
     
 }
 
@@ -159,25 +159,23 @@ body {
 
 #footer {
 	background-color:none;
-	color: white;
+	color: black;
 }
 
 
 /** non bootstrao **/
-	@-ms-viewport {
-		width: device-width;
-	}
 
-		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-ms-animation: none !important;
-			animation: none !important;
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-ms-transition: none !important;
-			transition: none !important;
-		}
+
+	body.is-loading *, body.is-loading *:before, body.is-loading *:after {
+		-moz-animation: none !important;
+		-webkit-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+		-moz-transition: none !important;
+		-webkit-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+	}
 
 /* Banner */
 
@@ -202,58 +200,7 @@ body {
 		text-align: center;
 	}
 
-		#banner h2 {
-			-moz-transform: scale(1);
-			-webkit-transform: scale(1);
-			-ms-transform: scale(1);
-			transform: scale(1);
-			-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
-			-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
-			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
-			transition: transform 0.5s ease, opacity 0.5s ease;
-			display: inline-block;
-			font-size: 1.75em;
-			opacity: 1;
-			padding: 0.35em 1em;
-			position: relative;
-			z-index: 1;
-		}
 
-			#banner h2:before, #banner h2:after {
-				-moz-transition: width 0.85s ease;
-				-webkit-transition: width 0.85s ease;
-				-ms-transition: width 0.85s ease;
-				transition: width 0.85s ease;
-				-moz-transition-delay: 0.25s;
-				-webkit-transition-delay: 0.25s;
-				-ms-transition-delay: 0.25s;
-				transition-delay: 0.25s;
-				background: #fff;
-				content: '';
-				display: block;
-				height: 2px;
-				position: absolute;
-				width: 100%;
-			}
-
-			#banner h2:before {
-				top: 0;
-				left: 0;
-			}
-
-			#banner h2:after {
-				bottom: 0;
-				right: 0;
-			}
-
-		#banner p {
-			letter-spacing: 0.225em;
-			text-transform: uppercase;
-		}
-
-			#banner p a {
-				color: inherit;
-			}
 
 		#banner .more {
 			-moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;
@@ -325,33 +272,6 @@ body {
 			opacity: 0;
 		}
 
-		@media screen and (max-width: 736px) {
-
-			#banner {
-				padding: 7em 3em 5em 3em ;
-				height: auto;
-				min-height: 0;
-			}
-
-			
-
-				#banner .more {
-					display: none;
-				}
-
-		}
-
-	body.is-loading #banner h2 {
-		-moz-transform: scale(0.95);
-		-webkit-transform: scale(0.95);
-		-ms-transform: scale(0.95);
-		transform: scale(0.95);
-		opacity: 0;
-	}
-
-		body.is-loading #banner h2:before, body.is-loading #banner h2:after {
-			width: 0;
-		}
 
 	body.is-loading #banner .more {
 		-moz-transform: translateY(8.5em);
@@ -371,11 +291,7 @@ body {
 /* Landing */
 
 	body.landing #page-wrapper {
-		background-image: -moz-linear-gradient(top, rgba(145, 145, 145, 0.5), rgba(0,0,0,0.5)), url("../../images/Convite_casamento.png");
-		background-image: -webkit-linear-gradient(top, rgba(145, 145, 145, 0.5),rgba(50, 49, 49, 0.5)), url("../../images/Convite_casamento.png");
-		background-image: -ms-linear-gradient(top, rgba(145, 145, 145, 0.5), rgba(145, 145, 145, 0.5)), url("../../images/Convite_casamento.png");
-		background-image: linear-gradient(top, rgba(145, 145, 145, 0.5), rgba(145, 145, 145, 0.5)), url("../../images/Convite_casamento.png");
-		background-attachment: fixed;
+		background-image: url("../../images/Convite_casamento.png");background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -386,9 +302,22 @@ body {
 		min-height: 100vh; /* Ensures it covers the full viewport */
 		width: 100%;
 	}
-	@media screen and (max-width: 768px) {
-		body.landing #page-wrapper {
-			background-size: contain; /* Change to contain if cropping is an issue */
-			background-position: center top; 
+
+	@media screen and (max-width: 736px) {
+
+		#banner {
+			padding: 7em 3em 5em 3em ;
+			height: auto;
+			min-height: 0;
 		}
+
+		#banner .more {
+			display: none;
+		}
+		
+		body.landing #page-wrapper {
+			background-size: contain;
+			background-position: center center; 
+		}
+
 	}

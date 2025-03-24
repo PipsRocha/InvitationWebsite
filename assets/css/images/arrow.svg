@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" viewBox="0 0 30 30" zoomAndPan="disable" preserveAspectRatio="none">
-    <style type="text/css"><![CDATA[ line { stroke: #ffffff; stroke-width: 3; } ]]></style>
-	<line x1="0" y1="15" x2="15" y2="30" />
-	<line x1="30" y1="15" x2="15" y2="30" />
-	<line x1="15" y1="30" x2="15" y2="0" />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><title>Artboard-33</title><g id="Down"><polygon points="18.294 16.793 13.001 22.086 13.001 1 12.001 1 12.001 22.086 6.706 16.792 5.999 17.499 12.501 24 19.001 17.5 18.294 16.793" style="fill:#232326"/></g></svg>
