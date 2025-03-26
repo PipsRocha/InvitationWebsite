@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-placeholder/2.3.1/jquery.placeholder.min.js"></script> <!-- Load Placeholder plugin -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
 </head>
 <body class="landing">
 
@@ -116,7 +117,7 @@
             </div>
         </div>
 
-        <div class="row align-items-center justify-content-center" style="padding-top: 5vh;">
+        <div class="row align-items-center justify-content-center" style="padding-top: 5vh; padding-bottom: 3vh">
             <div class="carousel-item active">
                 <div class="card">
                     <div class="img-wrapper">
@@ -193,8 +194,9 @@
     </div>
 
     <div class="container-fluid" id="one">
-        <div class="row align-items-center justify-content-left text-center">
+        <div class="row align-items-center justify-content-center text-center">
             <h2><b>DRIVERS</b></h2>
+            <img src="images/driver.png" style="max-height: 15vh; width: auto; padding: 2vh;" alt="driver icon"/>
             <p> Para poderem beber à vontade, vamos ter um serviço de drivers, com as seguintes opções:<br>
                 - Levam o vosso carro para o casamento e o driver leva-vos para casa no vosso carro <br>
                 - Vão de boleia para o casamento e o driver leva-vos a casa no carro da empresa de drivers <br>
@@ -204,6 +206,10 @@
 
         <div class="row align-items-center justify-content-center text-center" style="padding-top: 5vh;">
             <h2 style="padding-bottom: 2vh;"><b>ALOJAMENTO</b></h2>
+            <div class="col-12">
+                <img src="images/room.webp" style="max-height: 15vh; width: auto; padding: 2vh;" alt="room icon"/>
+            </div>
+
             <div class="col-12 col-md-4" style="padding-top: 3vh;">
                 <h4>Alojamento das Fontes<h4>
                 <a href="https://www.booking.com/Share-qMK0D5" type="button" class="btn btn-sm btn-outline-secondary" tabindex="-1" role="button" aria-disabled="true">Booking</a>
@@ -225,22 +231,50 @@
         </div>
     </div>
 
-    <div class="container-fluid" id="three">
-        <div class="row align-items-center justify-content-center text-center" style="padding-top: 5vh;">
-            <h3> CONFIRMAR PRESENÇA <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvhti2D1jRkMr_P6349hNTVz8D8ZhQ2O9Pyl9PvYxAW7xqoQ/viewform?embedded=true" id="aqui"> AQUI</a> ATÉ DIA X DO X </h2>
-        </div>
-
-        <div class="row align-items-center justify-content-center text-center" style="padding-top: 3vh;">
-            <div class="col-3">
-                <img src="">
-            </div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
+    <div class="grid-item main" style="padding: 2vh;">
+        <div class="items">
+          <div class="item item1"><img src="images/M1.heic"/><img src="images/M10.HEIC"/><img src="images/M11.JPG"/><img src="images/M12.JPG"/><img src="images/M13.JPG"/><img src="images/M14.JPG"/><img src="images/M15.JPG"/><img src="images/M16.JPG"/><img src="images/M17.JPG"/><img src="images/M18.jpg"/><img src="images/M37.JPG"/></div>
+          <div class="item item2"><img src="images/M2.HEIC"/><img src="images/M3.HEIC"/><img src="images/M4.HEIC"/><img src="images/M35.JPG"><img src="images/M6.HEIC"/><img src="images/M7.jpg"><img src="images/M8.jpg"/><img src="images/M9.heic"/><img src="images/M31.JPG"/><img src="images/M36.JPG"/><img src="images/M38.JPG"/></div>
+          <div class="item item3"><img src="images/M19.jpg"/><img src="images/M20.JPG"/><img src="images/M21.jpg"/><img src="images/M22.JPG"/><img src="images/M23.JPG"/><img src="images/M24.JPG"/><img src="images/M25.JPG"/><img src="images/M26.JPG"/><img src="images/M27.JPG"/><img src="images/M28.JPG"/><img src="images/M29.JPG"/><img src="images/M30.JPG"/></div>
         </div>
     </div>
 
+    <script>
+        const slider = document.querySelector('.items');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
 
+        slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+        });
+        slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active');
+        });
+        slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('active');
+        });
+        slider.addEventListener('mousemove', (e) => {
+        if(!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 3; //scroll-fast
+        slider.scrollLeft = scrollLeft - walk;
+        console.log(walk);
+        });
+    </script>
+
+
+    <div class="container-fluid" id="three">
+        <div class="row align-items-center justify-content-center text-center" >
+            <h3> CONFIRMAR PRESENÇA <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvhti2D1jRkMr_P6349hNTVz8D8ZhQ2O9Pyl9PvYxAW7xqoQ/viewform?embedded=true" id="aqui"> AQUI</a> ATÉ DIA X DO X </h2>
+        </div>
+    </div>
 
     <footer class="align-items-center justify-content-center text-center" id="footer" style="padding-top: 2.5vh;">
         <h3>Madalena & Hugo</h3>
@@ -283,7 +317,7 @@
                                 <!-- Options will be populated dynamically -->
                             </select>
                         </div>
-                        <div class="form-group float-right text-right pull-right">
+                        <div class="form-group text-center">
                             <button type="submit" class="btn btn-outline-secondary" id="clickable">Enviar</button>
                         </div>
                     </form>
@@ -373,13 +407,10 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
-    
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/jquery.serialize-object.js"></script>
-    <script src="assets/js/scriptinho.js"></script>
-            
-
+  
 </body>
 </html>
