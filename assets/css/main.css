@@ -267,7 +267,7 @@ body {
 			-ms-transition-delay: 1.25s;
 			transition-delay: 1.25s;
 			content: '';
-			background:  #47515c;;
+			background:  #44515e;;
 			display: block;
 			width: 100%;
 			height: 100%;
@@ -357,7 +357,7 @@ body {
 		}
 	  
 		.items.active {
-		  background: rgba(255,255,255,0.3);
+		  background: #fff5ef;;
 		  transform: scale(1);
 		}
 	  
